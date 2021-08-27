@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment page</title>
+    <script src="./signup.js"></script>
+    <style type="text/css">
+   
+    body{
+background-color: white;
+    }
+    #dummycard{
+width: 30%;
+background-color: rgb(40, 141, 141);
+color: rgb(201, 25, 25);
+text-align: center;
+margin: auto;
+display: block;
+    }
+    #pay{
+        margin-left: 50px;
+    }
+    #dummycard input{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    button{
+        padding: 10px;
+        text-align: center;
+        color: black;
+     background-color: yellow;
+    }
+    body button{
+        width: 150px;
+        margin-top: 50px;
+        margin-left: 45%;
+    }
+    #continueshoping{
+    width: 200px;
+height: 30px;
+background-color:red;
+margin-top: 40px;
+border-radius: 30px;
+font-weight: bold;
+text-align: center;
+text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <h1 id="pay">Payment page
+    <select>
+        <option>Debit Card</option>
+        <option>Credit Card</option>
+        <option>Net Banking</option>
+        <option>Wallet</option>
+    </select>
+</h1>
+    <div id="dummycard">
+        <h2>Enter Your Debit Card Details</h2>
+        <input id="name" type="text" placeholder="Enter cardholder name"/>
+        <input id="cardnumber" type="text" placeholder="Enter card number"/>
+        <input id="expiry" type="text" placeholder="Enter expiry month/year"/>
+        <input id="cvv" type="text" placeholder="Enter CVV"/>
+    </div>
+    <button onclick="place()">Place Order</button>
+    <div id="continueshoping"><a href="index.html">Continue shoping</a></div>
+
+    <script>
+let name=document.getElementById('name');
+let cardnumber=document.getElementById('cardnumber');
+let expiry=document.getElementById('expiry');
+let cvv=document.getElementById('cvv');
+function place(){
+    if(name.value==="Rajnish kumar" && cardnumber.value==="12345678912345" && expiry.value==="00/01" && cvv.value==="333"){
+        setTimeout(function(){
+            alert("Your order successful")
+        },2000);
+        // console.log(name.value) for checking
+    }
+}
+
+    </script>
+</body>
+</html>

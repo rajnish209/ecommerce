@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="login.css">
+
+    <script src="./signup.js"></script>
 </head>
 <body>
     <div id="main">
@@ -14,13 +16,15 @@
             <p><a href="signup.html">
                 Not registered? register</a></p>
                 <h4 class="name">Email:
-                    <input  id="form"type="text" placeholder="example@gmail.com"></input> 
+                    <input  id="email"type="text" placeholder="example@gmail.com"></input> 
                     </h4>
                 <h4 class="name">Passw:
-                    <input  id="form"type="text" placeholder="password"></input> 
+                    <input  id="password"type="text" placeholder="password"></input> 
                     </h4>
-                    <button id="submit">Login</button>
+                    <button  onclick="logintohome()"id="submit">Login</button>
+                   
                     <input type="checkbox" id="checkout">Remember me</input>
+                    <p id="ok"></p>
         </div>
         <div id="content2">
             <h3>Signin with</h3>
